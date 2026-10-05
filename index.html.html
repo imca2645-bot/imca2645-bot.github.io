@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Neil Philip Varghese | IMCA Student</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F5FA;--ink:#25232F;--muted:#6B687A;--line:#E2DFEC;--accent:#5E52A8;--soft:#E9E6F5;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141320;--ink:#ECEAF5;--muted:#A8A5BD;--line:#2B2940;--accent:#B3A8F0;--soft:#1D1B2E}}
+:root[data-theme="dark"]{--bg:#141320;--ink:#ECEAF5;--muted:#A8A5BD;--line:#2B2940;--accent:#B3A8F0;--soft:#1D1B2E}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1.0625rem;line-height:1.7}
+main{max-width:40rem;margin:0 auto;padding:5rem 1.5rem 5rem}
+h1,h2,.serif{font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-weight:400}
+.hero{margin-bottom:5rem;animation:in 1.2s ease-out both}
+@keyframes in{from{opacity:0;transform:translateY(8px)}}
+@media (prefers-reduced-motion:reduce){.hero{animation:none}}
+.status{display:inline-flex;align-items:center;gap:.55rem;background:var(--soft);color:var(--accent);font-weight:500;font-size:.95rem;padding:.3rem .95rem;border-radius:999px;margin-bottom:1.75rem}
+.status::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--accent)}
+h1{font-size:clamp(3.1rem,11vw,5.6rem);line-height:1;letter-spacing:-.02em;margin:0 0 1.5rem}
+.lead{font-size:1.25rem;color:var(--muted);margin:0;max-width:30rem}
+section{padding:2.75rem 0;border-top:1px solid var(--line)}
+h2{font-size:1.9rem;line-height:1.2;margin:0 0 1.25rem}
+p{margin:0 0 1rem}
+p:last-child{margin-bottom:0}
+.list{list-style:none;margin:0;padding:0;display:grid;gap:1.25rem}
+.list strong{display:block;font-weight:600}
+.list span{color:var(--muted)}
+.muted{color:var(--muted)}
+.skills{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:.6rem 2rem}
+.skills li{position:relative;padding-left:1.4rem}
+.skills li::before{content:"";position:absolute;left:0;top:.7em;width:.55rem;height:.55rem;border-radius:50%;background:var(--accent)}
+.mail{font-family:"Instrument Serif",Georgia,serif;font-size:clamp(1.5rem,6vw,2.2rem);color:var(--accent);text-decoration-thickness:1px;text-underline-offset:6px;overflow-wrap:anywhere}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:2px}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="status">Open to internships and projects</div>
+    <h1>Neil Philip Varghese</h1>
+    <p class="lead">First-year IMCA student with a growing love for programming and problem solving.</p>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I'm in the first year of the Integrated MCA, a five-year programme that combines a bachelor's and master's in computer applications.</p>
+    <p>I'm building a strong foundation now, so that the software I make later is built to last. I'm happy to learn by doing, through internships, collaborations, or small projects.</p>
+  </section>
+
+  <section id="studying">
+    <h2>What I'm studying</h2>
+    <ul class="list">
+      <li><strong>Programming in C</strong><span>Variables, control flow, functions, arrays, and pointers.</span></li>
+      <li><strong>Problem solving and logic</strong><span>Breaking problems into steps and turning them into working code.</span></li>
+      <li><strong>Mathematics for computing</strong><span>The discrete maths behind algorithms and data.</span></li>
+      <li><strong>Computer fundamentals</strong><span>How hardware, memory, and software fit together.</span></li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>C programming</li>
+      <li>Problem solving</li>
+      <li>Algorithms</li>
+      <li>Logical thinking</li>
+      <li>HTML and CSS</li>
+      <li>Teamwork</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="muted">My first projects are in progress. Up next is a console app that manages student records, and I'll add each finished project here.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="muted">The easiest way to reach me is by email.</p>
+    <a class="mail" href="mailto:neilphilipvarghese@gmail.com">neilphilipvarghese@gmail.com</a>
+  </section>
+</main>
+</body>
+</html>
